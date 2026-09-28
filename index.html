@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>數學互動練習庫</title>
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --bg: #F3F4F6;
+      --card-bg: #FFFFFF;
+      --text: #1F2937;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      padding: 30px 0;
+    }
+    h1 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    p.subtitle {
+      color: #6B7280;
+      font-size: 1.1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin: 0 0 10px 0;
+      color: var(--primary);
+    }
+    .card p {
+      color: #4B5563;
+      font-size: 0.95rem;
+      margin: 0 0 15px 0;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background-color: #EEF2FF;
+      color: var(--primary);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      align-self: flex-start;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧮 數學互動練習庫</h1>
+      <p class="subtitle">無限隨機題庫 ‧ 多項選擇題 ‧ 即時解題解析</p>
+    </header>
+
+    <div class="grid">
+      <!-- 練習 1 -->
+      <a href="rounding.html" class="card">
+        <div>
+          <h3>1. 數值捨入與有效數字</h3>
+          <p>涵蓋四捨五入、無條件進位/捨去、小數點位數、十/百/千/萬位及有效數字。</p>
+        </div>
+        <span class="badge">開始練習 →</span>
+      </a>
+
+      <!-- 練習 2 -->
+      <a href="simple-interest.html" class="card">
+        <div>
+          <h3>2. 單利息 (Simple Interest)</h3>
+          <p>計算利息、本利和、本金、年利率及存款時間（含月份換算）。</p>
+        </div>
+        <span class="badge">開始練習 →</span>
+      </a>
+
+      <!-- 練習 3 -->
+      <a href="compound-interest.html" class="card">
+        <div>
+          <h3>3. 複利息 (Compound Interest)</h3>
+          <p>計算本利和、複利息、本金及多種計息頻率（每年、每季、每月、每日等）。</p>
+        </div>
+        <span class="badge">開始練習 →</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
