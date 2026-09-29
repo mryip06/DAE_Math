@@ -1,117 +1,101 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-HK">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>數學互動練習庫</title>
-  <style>
-    :root {
-      --primary: #4F46E5;
-      --bg: #F3F4F6;
-      --card-bg: #FFFFFF;
-      --text: #1F2937;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      margin: 0;
-      padding: 20px;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    header {
-      text-align: center;
-      padding: 30px 0;
-    }
-    h1 {
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
-    p.subtitle {
-      color: #6B7280;
-      font-size: 1.1rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .card {
-      background: var(--card-bg);
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-      transition: transform 0.2s, box-shadow 0.2s;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-    }
-    .card h3 {
-      margin: 0 0 10px 0;
-      color: var(--primary);
-    }
-    .card p {
-      color: #4B5563;
-      font-size: 0.95rem;
-      margin: 0 0 15px 0;
-    }
-    .badge {
-      display: inline-block;
-      padding: 4px 10px;
-      background-color: #EEF2FF;
-      color: var(--primary);
-      border-radius: 20px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      align-self: flex-start;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數學互動練習庫</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>🧮 數學互動練習庫</h1>
-      <p class="subtitle">無限隨機題庫 ‧ 多項選擇題 ‧ 即時解題解析</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>🧮 數學互動練習庫</h1>
+            <p class="subtitle">無限隨機題庫 • 多項選擇題 • 即時解題解析</p>
+        </header>
 
-    <div class="grid">
-      <!-- 練習 1 -->
-      <a href="rounding.html" class="card">
-        <div>
-          <h3>1. 數值捨入與有效數字</h3>
-          <p>涵蓋四捨五入、無條件進位/捨去、小數點位數、十/百/千/萬位及有效數字。</p>
-        </div>
-        <span class="badge">開始練習 →</span>
-      </a>
+        <main class="grid-container">
+            <!-- L.C.M. 系列 -->
+            <div class="card">
+                <h2>1. 求 2 個數的 L.C.M.</h2>
+                <p>學習與練習求兩個正整數的最小公倍數（涵蓋枚舉法、短除法、質因數分解法及計數機法）。</p>
+                <a href="https://share.gemini.google/vCE3sZDVvqlg" target="_blank" class="btn">開始練習 →</a>
+            </div>
 
-      <!-- 練習 2 -->
-      <a href="simple-interest.html" class="card">
-        <div>
-          <h3>2. 單利息 (Simple Interest)</h3>
-          <p>計算利息、本利和、本金、年利率及存款時間（含月份換算）。</p>
-        </div>
-        <span class="badge">開始練習 →</span>
-      </a>
+            <div class="card">
+                <h2>2. 求 3 個數的 L.C.M.</h2>
+                <p>進階練習求三個數字的最小公倍數，掌握多數值的公倍數計算技巧。</p>
+                <a href="https://share.gemini.google/wNxr5MtT8lNg" target="_blank" class="btn">開始練習 →</a>
+            </div>
 
-      <!-- 練習 3 -->
-      <a href="compound-interest.html" class="card">
-        <div>
-          <h3>3. 複利息 (Compound Interest)</h3>
-          <p>計算本利和、複利息、本金及多種計息頻率（每年、每季、每月、每日等）。</p>
-        </div>
-        <span class="badge">開始練習 →</span>
-      </a>
+            <!-- 簡易方程系列 -->
+            <div class="card">
+                <h2>3. 簡易方程（一）一步一元一次方程</h2>
+                <p>運用天秤原理進行基礎加、減、乘、除的單一步驟方程解題。</p>
+                <a href="https://share.gemini.google/Cuo97RiwiYQQ" target="_blank" class="btn">開始練習 →</a>
+            </div>
+
+            <div class="card">
+                <h2>4. 簡易方程（二）兩步一元一次方程</h2>
+                <p>練習需要兩個運算步驟的代數方程解法，建立穩固代數基礎。</p>
+                <a href="https://share.gemini.google/JQdS7nWhgBQE" target="_blank" class="btn">開始練習 →</a>
+            </div>
+
+            <div class="card">
+                <h2>5. 解方程技巧（一）同類項合併</h2>
+                <p>學習簡化含有多個未知數項或常數項的方程，進行同類項合併。</p>
+                <a href="https://share.gemini.google/7VMUb2zxdJKO" target="_blank" class="btn">開始練習 →</a>
+            </div>
+
+            <div class="card">
+                <h2>6. 解方程技巧（二）展開</h2>
+                <p>練習運用分配律展開括號並解一元一次方程。</p>
+                <a href="https://share.gemini.google/iTLEQ6mR6s1G" target="_blank" class="btn">開始練習 →</a>
+            </div>
+
+            <div class="card">
+                <h2>7. 解方程技巧（三）牽涉異分母加減</h2>
+                <p>掌握含有不同分母的分數方程解法，綜合運用通分與乘法公式。</p>
+                <a href="https://share.gemini.google/T7MbkKh18Zsn" target="_blank" class="btn">開始練習 →</a>
+            </div>
+
+            <!-- 簡單百分率系列 -->
+            <div class="card">
+                <h2>8. 簡單百分率（一）求 部份佔整體的 %</h2>
+                <p>計算特定數值佔總數的百分比率應用題。</p>
+                <a href="https://share.gemini.google/nZYVfuL2pBCj" target="_blank" class="btn">開始練習 →</a>
+            </div>
+
+            <div class="card">
+                <h2>9. 簡單百分率（二）求部份</h2>
+                <p>已知整體總數與百分率，計算相對應的部份數值。</p>
+                <a href="https://share.gemini.google/U0aMmNNtVsxf" target="_blank" class="btn">開始練習 →</a>
+            </div>
+
+            <div class="card">
+                <h2>10. 簡單百分率（三）求整體</h2>
+                <p>已知部份數值及其所佔百分率，反推計算整體總數。</p>
+                <a href="https://share.gemini.google/18FW6xQJXwXp" target="_blank" class="btn">開始練習 →</a>
+            </div>
+
+            <!-- 移至最後的三個單元 -->
+            <div class="card">
+                <h2>11. 數值捨入與有效數字</h2>
+                <p>涵蓋四捨五入、無條件進位/捨去、小數點位數、十/百/千/萬位及有效數字。</p>
+                <a href="https://share.gemini.google/BnIYEFbNLixV" target="_blank" class="btn">開始練習 →</a>
+            </div>
+
+            <div class="card">
+                <h2>12. 單利息 (Simple Interest)</h2>
+                <p>計算利息、本利和、本金、年利率及存款時間（含月份換算）。</p>
+                <a href="https://share.gemini.google/i82l3LDL6oRJ" target="_blank" class="btn">開始練習 →</a>
+            </div>
+
+            <div class="card">
+                <h2>13. 複利息 (Compound Interest)</h2>
+                <p>計算本利和、複利息、本金及多種計息頻率（每年、每季、每月、每日等）。</p>
+                <a href="https://share.gemini.google/uZExFbWbGIMh" target="_blank" class="btn">開始練習 →</a>
+            </div>
+        </main>
     </div>
-  </div>
 </body>
 </html>
