@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>數學互動練習庫</title>
+    <title>數學互動練習庫 by Felix Yip</title>
     <style>
         * {
             box-sizing: border-box;
@@ -16,11 +16,16 @@
             background-color: #f4f6f8;
             color: #333;
             padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            width: 100%;
+            flex: 1;
         }
 
         header {
@@ -31,12 +36,35 @@
         header h1 {
             font-size: 2.2rem;
             color: #3b36db;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+        }
+
+        header h1 .author-tag {
+            font-size: 1.3rem;
+            color: #555;
+            font-weight: normal;
+            margin-left: 8px;
         }
 
         .subtitle {
             color: #666;
             font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .contact a {
+            color: #3b36db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
         }
 
         /* Responsive Grid for Cards */
@@ -101,8 +129,9 @@
 <body>
     <div class="container">
         <header>
-            <h1>🧮 數學互動練習庫</h1>
+            <h1>🧮 數學互動練習庫 <span class="author-tag">by Felix Yip</span></h1>
             <p class="subtitle">無限隨機題庫 • 多項選擇題 • 即時解題解析</p>
+            <p class="contact">如有意見，請電郵 <a href="mailto:mryip06@gmail.com">mryip06@gmail.com</a></p>
         </header>
 
         <main class="grid-container">
